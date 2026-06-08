@@ -3,13 +3,13 @@ namespace Invoicing;
 public class Rechnung
 {
     public Rechnungsnummer Rechnungsnummer { get; }
-    public DateOnly Date { get; }
+    public DateOnly Rechnungsdatum { get; }
     public decimal Amount { get; }
 
     public Rechnung(Rechnungsnummer rechnungsnummer, DateOnly date, decimal amount)
     {
         Rechnungsnummer = rechnungsnummer;
-        Date = date;
+        Rechnungsdatum = date;
         Amount = amount;
     }
 }
