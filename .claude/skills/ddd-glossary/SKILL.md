@@ -3,6 +3,15 @@ name: ddd-glossary
 description: Creates and maintains a DDD glossary that maps German domain terms to English translations. Use when the user wants to add, update, or sort terms in the DDD glossary.
 ---
 
+This project uses Domain-Driven Design with a German **Ubiquitous Language**: domain terms are written in German, technical terms in English.
+
+- `Auftrag`, `Kunde`, `SortByAuftragsID` → domain terms, belong in the glossary
+- `Language`, `SendRequest` → technical terms, do not belong in the glossary
+
+The glossary exists so AI tools can understand and predict German domain terms correctly. See `references/intention.md` for full background.
+
+## Glossary file
+
 Manage the project's DDD glossary in `DDD_GLOSSARY.md` at the project root.
 
 The glossary uses a three-column markdown table:
