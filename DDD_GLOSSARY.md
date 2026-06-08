@@ -9,3 +9,4 @@ German domain terms used in this codebase with their English equivalents.
 | Kunde | Customer | A person or organization that places orders |
 | Lieferung | Delivery | The physical or digital fulfillment of an order |
 | Rechnung | Invoice | A document issued to a customer requesting payment for delivered goods or services |
+| Rechnungsnummer | Invoice Number | A unique identifier assigned to each invoice for tracking and reference Format YYYY-mm and a sequential increasing number|
