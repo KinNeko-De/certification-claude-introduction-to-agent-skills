@@ -45,6 +45,21 @@ Columns:
 3. Confirm the glossary has exactly three columns and every column is filled.
 4. Tell the user that you sorted the glossary alphabetically by the German term
 
+## Replacing English terms in the codebase
+
+When the user asks to replace all English occurrences of a term with the German translation:
+
+1. Look up the term in `DDD_GLOSSARY.md` to confirm both the English and German forms.
+2. Run the replace script:
+   ```
+   npx tsx .claude/skills/ddd-glossary/scripts/replace-term.ts <EnglishTerm> <GermanTerm>
+   ```
+   Example: `npx tsx .claude/skills/ddd-glossary/scripts/replace-term.ts Invoice Rechnung`
+3. Show the user the list of changed files and total replacement count from the script output.
+4. Ask the user to review the changes before committing.
+
+The script replaces whole-word matches only (word boundary `\b`) in code files (`.cs`, `.ts`, `.js`, `.py`, `.java`, `.kt`). It skips `node_modules`, `.git`, `.venv`, `bin`, and `obj` directories.
+
 ## Showing an example
 
 If the user asks what the glossary looks like or wants to see an example, show them the content of:
