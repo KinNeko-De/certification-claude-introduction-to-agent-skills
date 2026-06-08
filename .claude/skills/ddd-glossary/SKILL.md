@@ -36,6 +36,11 @@ Columns:
 3. Confirm the glossary has exactly three columns and every column is filled.
 4. Tell the user that you sorted the glossary alphabetically by the German term
 
+## Showing an example
+
+If the user asks what the glossary looks like or wants to see an example, show them the content of:
+`assets/example-glossary.md`
+
 ## Requirements
 
 - Node.js with `npx` available in the shell
