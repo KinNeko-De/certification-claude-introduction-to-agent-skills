@@ -8,7 +8,7 @@ This project uses Domain-Driven Design with a German **Ubiquitous Language**: do
 - `Auftrag`, `Kunde`, `SortByAuftragsID` → domain terms, belong in the glossary
 - `Language`, `SendRequest` → technical terms, do not belong in the glossary
 
-The glossary exists so AI tools can understand and predict German domain terms correctly. See `references/intention.md` for full background.
+The glossary exists so AI tools can understand and predict German domain terms correctly. See `references/intention.md` for full background and `references/Ecommerce.md` for domain boundaries and naming rules.
 
 ## Glossary file
 
